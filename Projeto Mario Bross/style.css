@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Mukta", sans-serif;
+}
+
+.header {
+    display: flex;
+    text-align: center;
+    gap: 30px;
+    margin: 30px;
+}
+
+.header img {
+    height: 60px;
+
+}
+
+.header a {
+    color: white;
+    font-size: 24px;
+    padding: 5px 10px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #c51111;
+    transition: 0.5s ease-in-out;
+
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.caixa-mãe {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+
+.caixa-principal {
+    width: 47%;
+}
+
+.logo-mario {
+    height: 200px;
+
+}
+
+p {
+    line-height: 1.2;
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+    padding-bottom: 10px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    background-color: #c51111;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-size: 18px;
+
+
+}
+
+button:hover {
+    background-color: black;
+
+}
+
+.irmãos-mario {
+    height: 500px;
+}
+
+.logo-whatsapp img {
+    position: fixed;
+    height: 40px;
+    right: 10px;
+    bottom: 10px;
+
+}
+
+.caixa-video {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+
+}
+
+video {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+
+}
+
+.mascara-video {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 30%;
+    left: -300px;
+    background-color: white;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    transition: left 0.5s ease-in-out;
+}
+
+input {
+    display: flex;
+    padding-left: 3px;
+    height: 30px;
+    width: 200px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline-color: #c51111;
+    padding: 10px;
+}
+
+textarea {
+    padding-left: 3px;
+    height: 80px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline-color: #c51111;
+}
+
+.mascara-form {
+    height: 100vh;
+    width: 100vw;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+
+}
+
+@media(max-width:1100px) {
+    p {
+        display: none;
+    }
+
+    .caixa-mãe {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .caixa-principal {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .irmãos-mario {
+        display: flex;
+        height: auto;
+        width: 80vw;
+
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        gap: 20px;
+    }
+
+    .header a {
+        font-size: 22px;
+    }
+
+    .header img {
+        display: none;
+    }
+
+
+    button {
+        margin-top: 10px;
+    }
+}

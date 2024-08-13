@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Broders</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <img src="./Arquivos/icon.png" alt="logo-header">
+        <a>Home</a>
+        <a>Sobre Nós</a>
+        <a>Fale Conosco</a>
+    </header>
+
+    <div class="mascara-form" onclick="desaparecerForm()"></div>
+
+    <div class="caixa-mãe">
+        <div class="caixa-principal">
+            <img src="./Arquivos/logo.png" alt="logo-mario" class="logo-mario">
+            <p>Encanadores Mario & Luigi - Resolvendo Seus Problemas Com Estilo!🛠</p>
+            <p>Você já se encotrou em uma situação de emergência com encanamento ? Vazamentos inesperados, canos
+                entupidos ou torneiras que não para de
+                pingar ? Não se preocupe, porque estamos aqui para salvar o dia! Apresentamos a vocês os encanadores
+                mais famosos do Reino dos Cogumelos - Mario & Luigi!</p>
+
+            <button onclick="cliqueiNoBotao()">Entre em contato</button>
+        </div>
+
+        <div>
+            <img src="./Arquivos/mario.png" alt="irmãos-mario" class="irmãos-mario">
+        </div>
+
+    </div>
+
+    <div class="caixa-video">
+        <video src="./Arquivos/video.mp4" autoplay muted loop></video>
+        <div class="mascara-video"></div>
+    </div>
+
+    <a class="logo-whatsapp">
+        <img src="./Arquivos/WhatsApp_Logo_PNG_Sem_Fundo_Transparente.png" alt="logo-whatsapp">
+    </a>
+
+    <form action="https://formcarry.com/s/Ae9VL1ONsTY" method="POST" enctype="multipart/form-data" class="form">
+
+        <input id=" nome" name="nome" placeholder="Seu nome">
+        <input id="sobrenome" name="sobrenome" placeholder="Seu sobrenome">
+        <textarea id="email" name="email" placeholder="Digite seu email aqui"></textarea>
+
+        <button type="submit">Pedir orçamento</button>
+    </form>
+
+</body>
+<script src="script.js"></script>
+
+</html>
